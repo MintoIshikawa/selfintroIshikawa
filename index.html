@@ -1,46 +1,173 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhD Student | Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: #1a1f36;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #0077cc;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .pub {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1a1f36;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .links a {
+      margin-right: 1rem;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>自己紹介</h1>
-        <p>私の名前は石川雅隆です。素粒子理論と宇宙論に興味があり、現在、東京大学大学院総合文化研究科で修士1年として励んでいます。</p>
-        <p>研究室は<a href="http://hep1.c.u-tokyo.ac.jp/index.html.ja">駒場素粒子論研究室</a>で、指導教員は<a href="https://sites.google.com/view/tnoumi/">野海俊文さん</a>です。</p>
-        <p>趣味は読書、旅行、昼寝です。新しいことを学ぶことが好きです。</p>
-        <p>このウェブサイトでは、私の研究プロジェクトや興味、ブログ記事を紹介していきます。どうぞよろしくお願いします！</p>
-    </div>
-    <div class="container">
-        <h1>プロジェクト1:重力波波形計算</h1>
-        <p>重力波は一般相対性理論が提唱されて以来予言されていた物理現象である。
-            LIGOと呼ばれる重力波干渉系を用いて2015年に直接観測され、2017年に観測に尽力した研究者がノーベル物理学賞を受賞した。
-            重力波は質量を持つ物体が動くと発生する時空の歪みが伝わる現象で、この波形の計算には従来、アインシュタイン方程式を摂動展開して解析的に解く手法や数値計算を用いて解く手法を用いられてきた。
-            本研究では、重力波を場の量子論の古典極限を取ることで計算している。</p>
-    </div>
+
+<header>
+  <h1>Your Name</h1>
+  <p>PhD Student in Physics | University Name</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I am a PhD student working on theoretical physics, focusing on quantum field theory, gravity, and related topics.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <p>
+    My research interests include:
+  </p>
+  <ul>
+    <li>Quantum Field Theory</li>
+    <li>Black Hole Physics</li>
+    <li>Quantum Information in Gravity</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+
+  <div class="pub">
+    <strong>Paper Title 1</strong><br>
+    Author Name, Coauthor Name<br>
+    <em>Journal Name, Year</em>
+  </div>
+
+  <div class="pub">
+    <strong>Paper Title 2</strong><br>
+    Author Name, Coauthor Name<br>
+    <em>Journal Name, Year</em>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <div class="links">
+    <a href="#">Google Scholar</a>
+    <a href="#">GitHub</a>
+    <a href="#">Twitter</a>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  &copy; 2026 Your Name
+</footer>
+
 </body>
 </html>
-
