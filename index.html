@@ -13,11 +13,28 @@
       color: #333;
     }
 
-    header {
+     header {
       background: #1a1f36;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
+      position: relative;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+
+    .lang-switch button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      background: #0077cc;
+      color: white;
+      border-radius: 5px;
     }
 
     header h1 {
@@ -104,22 +121,34 @@
 <body>
 
 <header>
-  <h1>Masataka Ishikawa</h1>
-  <p> First-year PhD Student in Physics | Graduate School of Arts and Sciences, The University of Tokyo</p>
+  <div class="lang-switch">
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('ja')">JA</button>
+</div>
+
+  <h1 data-en="Masataka Ishikawa" data-ja="石川　雅隆">Masataka Ishikawa</h1>
+  <p data-en="First-year PhD Student in Physics | Graduate School of Arts and Sciences, The University of Tokyo" data-ja="広域科学専攻　博士課程一年 | 東京大学大学院総合文化研究科"> 
+    First-year PhD Student in Physics | Graduate School of Arts and Sciences, The University of Tokyo</p>
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#contact">Contact</a>
+  <a href="#about" data-en="About" data-ja="自己紹介">About</a>
+  <a href="#research" data-en="Researchr" data-ja="研究">Research</a>
+  <a href="#publications" data-en="Publication" data-ja="論文">Publications</a>
+  <a href="#seminars and presentations" data-en="Seminars and Presentations" data-ja="発表">Seminars and Presentations</a>
+  <a href="#dissertations" data-en="Dissertations" data-ja="学位論文">Dissertaions</a>
+  <a href="#contact" data-en="Contact" data-ja="連絡先">Contact</a>
 </nav>
 
 <div class="container">
 
 <section id="about">
-  <h2>About</h2>
-  <p>
+  <h2 data-en="About" data-ja="自己紹介">About</h2>
+  <p data-en=" I am a PhD student working on theoretical physics, focusing on quantum field theory, gravity, and related topics. 
+    My supervisor is <a href="https://sites.google.com/view/tnoumi/ホーム?authuser=0">Toshifumi Noumi </a>
+    at <a href="https://www.komaba-high-energy-theory.c.u-tokyo.ac.jp">Komaba High Energy Theory Group</a>."
+  data-ja~"場の量子論と重力理論を中心に理論物理を研究している博士学生です。指導教員は<a href="https://www.komaba-high-energy-theory.c.u-tokyo.ac.jp">駒場素粒子論研究室</a>に所属している
+   href="https://sites.google.com/view/tnoumi/ホーム?authuser=0">野海俊文</a>氏です。">
     I am a PhD student working on theoretical physics, focusing on quantum field theory, gravity, and related topics. 
     My supervisor is <a href="https://sites.google.com/view/tnoumi/ホーム?authuser=0">Toshifumi Noumi </a>
     at <a href="https://www.komaba-high-energy-theory.c.u-tokyo.ac.jp">Komaba High Energy Theory Group</a>.
@@ -127,25 +156,26 @@
 </section>
 
 <section id="research">
-  <h2>Research</h2>
-  <p>
+  <h2 data-en="Research" data-ja="研究">Research</h2>
+  <p data-en=" research interests include:" data-ja="私の研究の興味:">
     My research interests include:
   </p>
   <ul>
-    <li>Open Effective Field Theory</li>
-    <li>Black Hole Physics</li>
-    <li>Inflation</li>
-    <li>Unitary Representation theory of Lie algebra for cosmology and quantum field theory</li>
+    <li data-en="Open Effective Field Theory" data-ja="量子開放系の有効場理論">Open Effective Field Theory</li>
+    <li data-en="Black Hole Physics" data-ja="ブラックホールの物理">Black Hole Physics</li>
+    <li data-en="Inflation" data-ja="インフレーション">Inflation</li>
+    <li　data-en="Unitary Representation theory of Lie algebra for cosmology and quantum field theory"
+      data-ja="宇宙論や場の量子論のためのリー代数のユニタリ表現論">Unitary Representation theory of Lie algebra for cosmology and quantum field theory</li>
   </ul>
 </section>
 
 <section id="publications">
-  <h2>Publications</h2>
+  <h2 data-en="Publications" data-ja="論文">Publications</h2>
 
   <div class="pub">
    <a href="https://arxiv.org/abs/2507.00850"> <strong>Perturbative unitarity bounds on field-space curvature in de Sitter spacetime: purity vs scattering amplitude</strong></a><br>
     Qianhang Cai, Tomoya Inada, <strong>Masataka Ishikawa</strong>, Kanji Nishii, Toshifumi Noumi<br>
-    <em>Journal of High Energy Physics, 2026</em>
+    <em>JHEP 03 (2026), 009</em>
   </div>
 
   <!-- <div class="pub">
@@ -155,30 +185,30 @@
   </div> -->
 
 </section>
-<section id ="Seminars and Presentations">
-  <h2>Seminars and Presentations</h2>
+<section id ="seminars and presentations">
+  <h2 data-en="Seminars and Presentations" data-ja="発表">Seminars and Presentations</h2>
 </section>
   
-<section id="Dissertation">
- <h2>Dissertation</h2>
+<section id="dissertations">
+ <h2 data-en="Dissertations" data-ja="学位論文">Dissertations</h2>
 
   <div class="diss">
-    <strong>Master thesis (in Japanese)</strong> <br>
+    <strong data-en="Master thesis (in Japanese)" data-ja="修士論文">Master thesis (in Japanese)</strong> <br>
     題目: 散乱振幅から迫るブラックホールと重力波の物理 <br>
     Title: The Physics of Black Holes and Gravitaional Waves from Scattering Amplitudes
   </div>
 <br>
    <div class="diss">
-    <strong>Doctoral thesis  </strong><br>
+    <strong data-en="Dotoral thesis" data-ja="博士論文">Doctoral thesis  </strong><br>
     TBA
   </div>
   
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <br>
-  For the following email address, please change _AT_ into @.
+  <h2 data-en="Contact" data-ja="連絡先">Contact</h2>
+  <p data-en="For the following email address, please change _AT_ into @. "
+    data-ja="以下のメールアドレスの_AT_は@に変更してください。">For the following email address, please change _AT_ into @. </p>
   <p>Email: marlborough _AT_ g.ecc.u-tokyo.ac.jp</p>
   <div class="links">
     <a href="https://scholar.google.co.jp/citations?hl=ja&view_op=list_works&gmla=AEk_c1suASMJDcZnU3xcsNP2Uf5kncg7kySP8s8qiyT6ZXLI9dyfqAuwjH4YOJ7EXPzgX9JcbhrKSoWLwjWQ_d6idOttrZFCGT-4vMVGg3ql7cM&user=f-4rOIYAAAAJ">Google Scholar</a>
@@ -192,6 +222,15 @@
 <footer>
   &copy; 2026 Masataka Ishikawa
 </footer>
+  
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+}
+</script>
 
 </body>
 </html>
