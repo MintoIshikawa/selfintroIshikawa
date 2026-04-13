@@ -206,7 +206,7 @@
   </div>
 <br>
    <div class="diss">
-    <strong data-en="Dotoral thesis" data-ja="博士論文">Doctoral thesis  </strong><br>
+    <strong data-en="Doctoral thesis" data-ja="博士論文">Doctoral thesis  </strong><br>
     TBA
   </div>
   
@@ -234,7 +234,7 @@
 function setLang(lang) {
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = el.getAttribute('data-' + lang);
+   el.innerHTML = el.getAttribute('data-' + lang);
   });
 }
 </script>
